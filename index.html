@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Peer to Peer System</title>
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jsSHA/2.0.2/sha.js"></script>
+        <link href="/styles.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1>Expense Tracker</h1>
+            <input type="number" id="income" name="income"/>
+            <button onclick="updateIncome()">Update Income</button> <br> <br>
+            <div id="income-output">Income (Rs): </div> <br> <br>
+            <label id="">Enter expense amount (Rs): </label>
+            <input id="expense-amount" name="expense amount">
+            <label>Enter expense reason: </label>
+            <input id="expense-reason" name="expense reason">
+            <button onclick="addData()">add data</button>
+            <div id="content">
+
+            </div>
+        <h1>Share data</h1>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"><br><br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password"><br><br>
+            <button onclick="store()">store data</button>
+            <div class="space"></div>
+            <button id="make-connection">make connection</button>
+            <button id="share-data">share data</button>
+            <div class="space"></div>
+            <button id="disconnect">disconnect</button>
+    </body>
+    <script src="/client.js"></script>
+</html>
