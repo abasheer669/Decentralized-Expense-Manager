@@ -1,11 +1,11 @@
-# Decentralized-Expense-Mangaer
+# Decentralized-Expense-Manager
 
 This application is an expense manager for daily use. User can track and record expenses.
-The Problem  we aim to solve using a decentraliced peer to peer application is to avoid using 3rd party applications.
+The Problem  we aim to solve using a decentraliced peer to peer application is to avoid using any 3rd party applications.
 
 Arcitecture:
 
-A server is hosted and all the peers register themself to the server. The sever has peer-ids and keys. keys are used to defferentiate betweens peers.
+A server is hosted and all the peers register themself to the server. The sever has peer-ids and keys. keys are used to defferentiate between peers.
 socket.io is used to established peer to peer network.
 
 Use Case:
@@ -18,6 +18,7 @@ Use Case:
 
 How to run?
 
-1)install necessary packages using npm.
+1)install necessary packages using npm
+
 2)https://localhost:4000
 
